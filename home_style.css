@@ -1,0 +1,128 @@
+@font-face {
+    src: url('./Fonts/Cocogoose\ Pro-trial.ttf');
+    font-family: cocogoose;
+}
+
+@font-face {
+    src: url('./Fonts/Cocogoose\ Pro\ Italic-trial.ttf');
+    font-family: cocogooseit;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.d_flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.d_flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile_ver {
+    justify-content: space-between;
+    height: 25px;
+}
+
+.humgurger_menu {
+    background-color: #272a31;
+    height: 5px;
+    width: 30px;
+}
+
+/*  Headline Section  */
+
+.headline {
+    width: 100vw;
+    height: 65vh;
+    background-image: linear-gradient(to right, rgba(211, 211, 255, 0.9), rgba(255, 255, 255, 0.9)), url('./images/bg_1.jpg');
+}
+
+.title span {
+    background-image: url('./images/bg_1.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: cocogoose;
+    font-size: 35px;
+}
+
+/* Courses Section */
+
+.main_courses {
+    width: 100vw;
+    height: 100%;
+    background-color: #272a31;
+    font-family: 'Lato', sans-serif;
+}
+
+.section_headline {
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+}
+
+.section_title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+hr {
+    width: 10vw;
+    height: 1px;
+    background-color: #ec5242;
+    border: none;
+}
+
+.cards_container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 100px);
+    gap: 10px;
+    margin-top: 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 95%;
+    height: 85px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.course_icon {
+    width: 10vw;
+    height: 5vh;
+}
+
+.course_name {
+    color: #ec5242;
+    font-size: 15px;
+    width: 10%;
+}
+
+.course_info {
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    width: 50%;
+}
+
+.course_link {
+    background-color: #ec5242;
+    text-decoration: none;
+    color: #fff;
+    height: 50px;
+    padding: 17px 40px;
+    margin-top: 20px;
+}
