@@ -1,0 +1,271 @@
+@font-face {
+  src: url('./Fonts/Cocogoose\ Pro-trial.ttf');
+  font-family: cocogoose;
+}
+
+@font-face {
+  src: url('./Fonts/Cocogoose\ Pro\ Italic-trial.ttf');
+  font-family: cocogooseit;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.d_flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d_flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header Section */
+
+.header {
+  position: relative;
+}
+
+.mobile_ver {
+  justify-content: space-between;
+  height: 25px;
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+
+.humgurger_menu {
+  background-color: #272a31;
+  height: 5px;
+  width: 30px;
+}
+
+/*  Headline Section  */
+
+.headline_section {
+  background-color: #ebebeb;
+  width: 100vw;
+  height: auto;
+  padding: 80px 10px 35px 10px;
+}
+
+.headlines {
+  align-items: center;
+  text-align: center;
+}
+
+.moto {
+  font-family: 'Lato', sans-serif;
+  color: #ec5242;
+  font-weight: 390;
+  margin-bottom: 9px;
+}
+
+.title {
+  color: #ec5242;
+  font-family: cocogoose, sans-serif;
+  font-size: 30px;
+}
+
+.informtion {
+  background-color: #fff;
+  border: 2px #d3d3d3 solid;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  padding: 18px 12px;
+  color: #2b2b2e;
+  margin: 25px 10px 10px 10px;
+  line-height: 23px;
+  font-weight: 503;
+}
+
+.contact_us {
+  color: #2b2b2e;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.credit {
+  font-family: 'Lato', sans-serif;
+  color: #2b2b2e;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.email {
+  color: #2b2b2e;
+  font-weight: 650;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Logo Design */
+
+.logo_design {
+  height: 60vh;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  padding: 30px 25px;
+  border-bottom: 2px #d3d3d3 solid;
+}
+
+.section_title {
+  align-items: center;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  color: #2b2b2e;
+}
+
+hr {
+  width: 9vw;
+  height: 1.5px;
+  background-color: #ec5242;
+  border: none;
+  margin-top: 10px;
+}
+
+.logo_story {
+  margin-top: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  color: #2b2b2e;
+}
+
+.logo_container {
+  border: 1px #d3d3d3 solid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 95%;
+  height: 35%;
+}
+
+.logo_name {
+  align-items: flex-start;
+}
+
+.logo_name span {
+  color: #ec5242;
+}
+
+/* Future Classes ection */
+
+.future_classes {
+  height: 80vh;
+  align-items: center;
+  padding: 20px;
+}
+
+.schedules {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin-top: 10px;
+  color: #2b2b2e;
+  font-weight: 500;
+}
+
+.class_date {
+  height: 35%;
+  width: 90%;
+  margin-top: 25px;
+}
+
+.class1 {
+  background: linear-gradient(rgba(236, 82, 66, 0.8), rgb(236, 82, 66, 0.8)), url('./images/class1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.class2 {
+  background: linear-gradient(rgba(236, 82, 66, 0.8), rgb(236, 82, 66, 0.8)), url('./images/class2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.date {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+  padding-top: 25%;
+}
+
+.start_now {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 5px;
+  text-decoration: none;
+  margin-left: 40%;
+}
+
+/* Footer Section */
+
+.partners_section {
+  background-color: rgb(48, 48, 51);
+  height: 25vh;
+  padding: 20px 10px;
+}
+
+.partners {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.partner_img {
+  width: 70%;
+}
+
+.footer_title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 27px;
+}
+
+.copyright_footer {
+  background-color: #fff;
+  align-items: center;
+  height: 20vh;
+}
+
+.footer_logo {
+  width: 50%;
+  height: 60%;
+  margin: 0;
+  border: none;
+}
+
+.copyright {
+  width: 50%;
+  height: 60%;
+}
+
+.copyright_info {
+  padding: 15px 10px;
+}
+
+.copyright_img {
+  width: 25%;
+}
+
+.cr_info {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  margin-left: 5px;
+  color: #2b2b2e;
+}

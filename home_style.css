@@ -50,7 +50,7 @@
 
 .headline {
   width: 100vw;
-  height: 55vh;
+  height: 45vh;
 
   /* background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.9), rgba(211, 211, 211, 0.7)), url('./images/bg_1.jpg'); */
 }
@@ -172,7 +172,7 @@ hr {
 
 .teaching_team {
   background-color: #fff;
-  height: 700px;
+  height: auto;
   font-family: 'Lato', sans-serif;
   margin-top: 16px;
 }
@@ -184,7 +184,7 @@ hr {
 
 .the_team {
   display: grid;
-  grid-template-rows: repeat(6, 20%);
+  grid-template-rows: repeat(6, auto);
   justify-items: center;
   align-items: center;
   margin: auto 4%;
