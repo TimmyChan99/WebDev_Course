@@ -76,6 +76,11 @@
   color: #ec5242;
   font-family: cocogoose, sans-serif;
   font-size: 30px;
+  text-transform: uppercase;
+}
+
+.break_line {
+  display: none;
 }
 
 .informtion {
@@ -88,6 +93,10 @@
   margin: 25px 10px 10px 10px;
   line-height: 23px;
   font-weight: 503;
+}
+
+.information_desktop {
+  display: none;
 }
 
 .contact_us {
@@ -132,8 +141,12 @@
   color: #2b2b2e;
 }
 
+.title2lines {
+  width: 80%;
+}
+
 hr {
-  width: 9vw;
+  width: 35px;
   height: 1.5px;
   background-color: #ec5242;
   border: none;
@@ -164,7 +177,7 @@ hr {
   color: #ec5242;
 }
 
-/* Future Classes ection */
+/* Future Classes Section */
 
 .future_classes {
   height: 80vh;
@@ -175,21 +188,31 @@ hr {
 .schedules {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  margin-top: 10px;
+  margin-top: 25px;
   color: #2b2b2e;
   font-weight: 500;
 }
 
+.cards_date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 80%;
+  margin-top: 20px;
+}
+
 .class_date {
-  height: 35%;
-  width: 90%;
+  height: 40%;
+  width: 100%;
   margin-top: 25px;
 }
 
 .class1 {
   background: linear-gradient(rgba(236, 82, 66, 0.8), rgb(236, 82, 66, 0.8)), url('./images/class1.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .class2 {
@@ -204,7 +227,7 @@ hr {
   font-size: 27px;
   color: #fff;
   text-align: center;
-  padding-top: 25%;
+  padding-top: 18%;
 }
 
 .start_now {
@@ -307,6 +330,10 @@ hr {
     list-style: none;
   }
 
+  .menu a {
+    text-decoration: none;
+  }
+
   .tools_list li a {
     text-decoration: none;
     color: #fff;
@@ -320,10 +347,6 @@ hr {
     height: 70px;
     align-items: center;
     justify-content: flex-end;
-  }
-
-  .menu a {
-    text-decoration: none;
   }
 
   .logo_header {
@@ -377,6 +400,126 @@ hr {
   /* Headline Section */
 
   .moto {
+    display: none;
+  }
+
+  .informtion {
+    display: none;
+  }
+
+  .information_desktop {
+    display: block;
+    background-color: #fff;
+    border: 2px #d3d3d3 solid;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 20px 15px;
+    color: #272a31;
+    margin: 4% 15% 10px 15%;
+    line-height: 28px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .title1 {
+    font-size: 45px;
+  }
+
+  .break_line {
+    display: block;
+    width: 3%;
+  }
+
+  .contact_us {
+    margin-top: 4%;
+    font-size: 16px;
+  }
+
+  .credit {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .email {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 20px;
+  }
+
+  /* Logo Design */
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .title2lines {
+    width: 500px;
+  }
+
+  .logo_story {
+    font-size: 17px;
+    width: 45%;
+    margin-top: 3%;
+  }
+
+  .logo_design {
+    padding: 4% 0;
+    border-top: 2px #d3d3d3 solid;
+  }
+
+  .logo_section2 {
+    width: 30%;
+    border: 2px #d3d3d3 solid;
+    margin-top: 5%;
+  }
+
+  /* Future Classes Section */
+  .future_classes {
+      padding: 4% 0;
+  }
+  .schedules {
+    font-size: 17px;
+  }
+
+  .cards_date {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 70%;
+  }
+
+  .class_date {
+    width: 45%;
+    height: 65%;
+  }
+
+  .date {
+    padding-top: 20%;
+    font-size: 35px;
+  }
+
+  .start_now {
+    font-size: 17px;
+  }
+  /* Footer Section */
+
+  .partners_section {
       display: none;
+  }
+
+  .copyright_footer {
+    background-color: rgb(48, 48, 51);
+    height: 20vh;
+  }
+
+  .copyright_img {
+      width: 10%;
+  }
+
+  .cr_info {
+      color: black;
+      font-size: 17px;
+      padding: 20px 0;
   }
 }
