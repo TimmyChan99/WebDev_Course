@@ -31,6 +31,10 @@
   position: relative;
 }
 
+.desktop_ver {
+  display: none;
+}
+
 .mobile_ver {
   justify-content: space-between;
   height: 25px;
@@ -254,4 +258,130 @@ footer {
 
 .partner_img {
   width: 15%;
+}
+
+/* Desktop Version */
+
+@media screen and (min-width: 768px) {
+  /* Header Section */
+
+  .desktop_ver {
+    display: flex;
+    box-shadow: 0 5px 5px #d3d3d3;
+  }
+
+  .menu_tools {
+    background-color: #272a31;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+  }
+
+  .social_media {
+    margin-right: 20px;
+  }
+
+  .social_media img {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .tools_list {
+    margin-right: 60px;
+  }
+
+  .tools_list li {
+    list-style: none;
+  }
+
+  .menu a {
+    text-decoration: none;
+  }
+
+  .tools_list li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin-right: 20px;
+    font-weight: 600;
+  }
+
+  .menu {
+    background-color: #fff;
+    height: 70px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .logo_header {
+    border: none;
+    font-size: 14px;
+    width: 170px;
+    height: 90%;
+    margin-top: auto;
+    margin-right: 15vw;
+  }
+
+  .logo_header h3,
+  .logo_header h2 {
+    color: #272a31;
+  }
+
+  .navbar {
+    list-style: none;
+    width: 40vw;
+    justify-content: space-around;
+  }
+
+  .nav_li {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #272a31;
+  }
+
+  .nav_about {
+    color: #ec5242;
+  }
+
+  .join_btn {
+    font-family: 'Lato', sans-serif;
+    border: 4px #ec5242 solid;
+    padding: 10px;
+    text-decoration: none;
+    color: #ec5242;
+    width: 135px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto 70px auto 70px;
+  }
+
+  .mobile_ver {
+    display: none;
+  }
+
+  /* Courses Section */
+
+  .main_courses {
+    height: 50vh;
+  }
+.card {
+  height: 100%;
+}
+
+  .cards_container {
+    grid-template-columns: repeat(5, 15%);
+    grid-template-rows: 20% 60% 20%;
+  }
+  .section_headline {
+    grid-column: 3/4;
+  }
+
+  .card1 {
+    grid-column: 1/2;
+  }
+  .course_link {
+    grid-area: 3/3/4/4;
+  }
 }

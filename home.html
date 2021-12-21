@@ -14,9 +14,39 @@
 
 <body>
     <header>
-        <div class="desktop_ver">
-            <div class="menu_tools"></div>
-            <div class="menu"></div>
+        <div class="desktop_ver d_flex_column">
+            <div class="menu_tools d_flex_row">
+                <div class="social_media">
+                    <img src="./images/facebook-logo.png" alt="facebook">
+                    <img src="./images/twitter.png" alt="twitter">
+                </div>
+                <ul class="tools_list d_flex_row">
+                    <li><a href="#">Logout</a></li>
+                    <li><a href="#">MyPage</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="menu d_flex_row">
+                <a href="#" class="logo">
+                    <div class="logo_container d_flex_row logo_header">
+                        <img src="./images/graduation-cap2.png" alt="graduation cap">
+                        <div class="logo_name d_flex_column">
+                            <h2>Web <span> Dev</span></h2>
+                            <h3>Course</h3>
+                        </div>
+                    </div>
+                </a>
+                <nav>
+                    <ul class="navbar d_flex_row">
+                        <li><a class="nav_about nav_li" href="#">About</a></li>
+                        <li><a class="nav_li" href="#">Program</a></li>
+                        <li><a class="nav_li" href="#">Courses</a></li>
+                        <li><a class="nav_li" href="#">Team</a></li>
+                        <li><a class="nav_li" href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="join_btn">Join Now</a>
+            </div>
         </div>
         <div class="mobile_ver d_flex_column">
             <div class="humgurger_menu"></div>
@@ -30,43 +60,43 @@
             <h1 class="title"><span>Web Development</span>
                 <br><span>free course</span>
             </h1>
-            <p class="informtion">Our goal is to create the best possible coding school at the lowest possible cost for students. Regardless of where they live and the size of their wallets.</p>
+            <p class="informtion">Our goal is to create the best possible coding school at the lowest possible cost for
+                students. Regardless of where they live and the size of their wallets.</p>
             <h3 class="moto2">Start Your Learning Journey</h3>
             <p class="credit">@ Web Course</p>
         </div>
     </section>
     <section class="main_courses">
         <div class="cards_container">
-
             <div class="section_headline d_flex_column">
                 <h2 class="section_title">Main Courses</h2>
                 <hr>
             </div>
-            <div class="card d_flex_row">
+            <div class="card card1 d_flex_row">
                 <img class="course_icon" src="./images/html.png" alt="html">
                 <h3 class="course_name">Html</h3>
                 <p class="course_info">Get started as a web developer by learning the basics of HTML, the essential
                     language of the web.</p>
             </div>
-            <div class="card d_flex_row">
+            <div class="card card2 d_flex_row">
                 <img class="course_icon" src="./images/css.png" alt="css">
                 <h3 class="course_name">CSS</h3>
                 <p class="course_info">Learn the fundamentals of CSS to add beautiful styling and customize the
                     appearance of your web pages.</p>
             </div>
-            <div class="card d_flex_row">
+            <div class="card card3 d_flex_row">
                 <img class="course_icon" src="./images/javascript.png" alt="javascript">
                 <h3 class="course_name">Java<br>Script</h3>
                 <p class="course_info">JavaScript is among the most powerful and flexible programming languages of
                     the web.</p>
             </div>
-            <div class="card d_flex_row">
+            <div class="card card4 d_flex_row">
                 <img class="course_icon" src="./images/atom.png" alt="react">
                 <h3 class="course_name">React</h3>
                 <p class="course_info">Learn to build dynamic and powerful web apps using React.js, a
                     component-based front-end framework.</p>
             </div>
-            <div class="card d_flex_row">
+            <div class="card card5 d_flex_row">
                 <img class="course_icon" src="./images/sql.png" alt="SQL">
                 <h3 class="course_name">SQL</h3>
                 <p class="course_info">Learn to communicate with databases using SQL, the standard data management
