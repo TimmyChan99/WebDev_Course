@@ -14,25 +14,56 @@
 
 <body>
     <header>
-        <div class="desktop_ver">
-            <div class="menu_tools"></div>
-            <div class="menu"></div>
+        <div class="desktop_ver d_flex_column">
+            <div class="menu_tools d_flex_row">
+                <div class="social_media">
+                    <img src="./images/facebook-logo.png" alt="facebook">
+                    <img src="./images/twitter.png" alt="twitter">
+                </div>
+                <ul class="tools_list d_flex_row">
+                    <li><a href="#">Logout</a></li>
+                    <li><a href="#">MyPage</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="menu d_flex_row">
+                <a href="#" class="logo">
+                    <div class="logo_container d_flex_row logo_header">
+                        <img src="./images/graduation-cap2.png" alt="graduation cap">
+                        <div class="logo_name d_flex_column">
+                            <h2>Web <span> Dev</span></h2>
+                            <h3>Course</h3>
+                        </div>
+                    </div>
+                </a>
+                <nav>
+                    <ul class="navbar d_flex_row">
+                        <li><a class="nav_about nav_li" href="#">About</a></li>
+                        <li><a class="nav_li" href="#">Program</a></li>
+                        <li><a class="nav_li" href="#">Courses</a></li>
+                        <li><a class="nav_li" href="#">Team</a></li>
+                        <li><a class="nav_li" href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="join_btn">Join Now</a>
+            </div>
         </div>
-        <div class="mobile_ver d_flex_column">
+        <nav class="mobile_ver d_flex_column">
             <div class="humgurger_menu"></div>
             <div class="humgurger_menu"></div>
             <div class="humgurger_menu"></div>
-        </div>
+        </nav>
     </header>
     <section class="headline_section">
         <div class="headlines d_flex_column">
             <h3 class="moto">"From Zero to Hero"</h3>
-            <h1 class="title">Web Development</h1>
-            <h1 class="title">free course</h1>
+            <h1 class="title1">Web Development</h1>
+            <h1 class="title1">free course</h1>
             <p class="informtion">Our mission: to help people learn to code for free regardless of where they live and
                 the size of their wallets. We accomplish this by creating thousands of videos, articles, and interactive
                 coding lessons - all freely available to the public. We also have thousands of study groups around the
                 world.</p>
+                
             <p class="contact_us">Please contact us per Email for any further questions</p>
             <p class="credit">@ Web Course</p>
             <p class="email">webcourse@dev.com</p>
@@ -44,7 +75,8 @@
             <h2 class="title">Course</h2>
             <hr>
         </div>
-        <p class="logo_story">The logo of Web Development Course was created James Smith who is a student who join this courses to become a software developer.</p>
+        <p class="logo_story">The logo of Web Development Course was created James Smith who is a student who join this
+            courses to become a software developer.</p>
         <div class="logo_container d_flex_row">
             <img src="./images/graduation-cap2.png" alt="graduation cap">
             <div class="logo_name d_flex_column">
@@ -75,11 +107,11 @@
                 <hr>
             </div>
             <ul class="partners d_flex_row">
-              <li><img class="partner_img" src="./images/google.png" alt="google"></li>
-              <li><img class="partner_img" src="./images/ted.png" alt="ted"></li>
-              <li><img class="partner_img" src="./images/blogger.png" alt="blogger"></li>
-              <li><img class="partner_img" src="./images/windows-logo.png" alt="windows-logo"></li>
-              <li><img class="partner_img" src="./images/github.png" alt="github"></li>
+                <li><img class="partner_img" src="./images/google.png" alt="google"></li>
+                <li><img class="partner_img" src="./images/ted.png" alt="ted"></li>
+                <li><img class="partner_img" src="./images/blogger.png" alt="blogger"></li>
+                <li><img class="partner_img" src="./images/windows-logo.png" alt="windows-logo"></li>
+                <li><img class="partner_img" src="./images/github.png" alt="github"></li>
             </ul>
         </div>
         <div class="copyright_footer d_flex_row">
@@ -89,14 +121,14 @@
                     <h2>Web <span> Dev</span></h2>
                     <h3>Course</h3>
                 </div>
-        </div>
-        <div class="copyright">
-            <div class="copyright_info d_flex_row">
-                <img class="copyright_img" src="./images/copyright.png" alt="copyright">
-                <h4 class="cr_info">copyright all rights reserved to Web Dev Course</h4>
+            </div>
+            <div class="copyright">
+                <div class="copyright_info d_flex_row">
+                    <img class="copyright_img" src="./images/copyright.png" alt="copyright">
+                    <h4 class="cr_info">copyright all rights reserved to Web Dev Course</h4>
+                </div>
             </div>
         </div>
-    </div>
     </Footer>
 </body>
 
