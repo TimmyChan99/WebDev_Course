@@ -56,19 +56,17 @@
 /*  Headline Section  */
 
 .headline {
+  padding: 90px 10px 15px 10px;
   width: 100vw;
   height: 65vh;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(211, 211, 211, 0.6)), url('./images/circular-pattern.png');
 }
 
-.headlines {
-  padding: 90px 10px 35px 10px;
-}
-
 .moto {
   font-family: 'Lato', sans-serif;
   color: #ec5242;
-  font-weight: 390;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .title_hero_section {
@@ -78,7 +76,8 @@
 .title span {
   color: #ec5242;
   font-family: cocogoose, sans-serif;
-  font-size: 26px;
+  font-size: 36px;
+  margin: 15px 0;
 }
 
 .informtion {
@@ -88,20 +87,23 @@
   font-size: 13px;
   padding: 11px;
   color: rgb(73, 73, 77);
-  margin: 10px;
-  width: 90vw;
+  margin: 10px 0;
+  width: 100%;
+  height: 10%;
+  line-height: 20px;
 }
 
 .moto2 {
   font-family: cocogoose, sans-serif;
   color: rgb(100, 100, 102);
-  font-weight: 580;
+  font-weight: 600;
+  margin: 5px 0 0 0;
 }
 
 .credit {
   font-family: 'Lato', sans-serif;
   color: rgb(100, 100, 102);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Courses Section */
@@ -207,13 +209,14 @@ hr {
   grid-template-rows: repeat(6, auto);
   justify-items: center;
   align-items: center;
-  margin: auto 4%;
-  gap: 10px;
+  margin: 5% 4%;
+  row-gap: 30px;
 }
 
 .teacher_info {
   justify-content: space-around;
-  height: 30%;
+  height: 100%;
+  width: 100%;
 }
 
 .img_container {
@@ -372,11 +375,13 @@ footer {
   /*  Headline Section  */
   .headline {
     height: 75vh;
+    padding: 0;
   }
 
   .headlines {
     margin-left: 10vw;
     width: 100vw;
+    padding: 90px 10px 35px 10px;
   }
 
   .moto {
