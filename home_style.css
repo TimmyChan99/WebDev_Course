@@ -12,7 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .d_flex_column {
@@ -53,12 +53,50 @@
   width: 30px;
 }
 
+/* menu mobile version */
+
+.navbar_mobile_ver {
+  position: relative;
+}
+
+.navbar_mobile {
+  position: fixed;
+  background-color: #fff;
+  z-index: 3;
+  list-style: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  display: none;
+}
+
+.navbar_mobile li {
+  margin-top: 60px;
+}
+
+.navbar_mobile li a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 800;
+  color: #272a31;
+}
+
+.navbar_mobile img {
+  width: 46px;
+  margin-top: 60px;
+}
+
+.navbar_mobile li a:hover {
+  color: #ec5242;
+}
+
 /*  Headline Section  */
 
 .headline {
-  padding: 90px 10px 15px 10px;
-  width: 100vw;
-  height: 65vh;
+  padding: 90px 10px 45px 10px;
+  height: auto;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(211, 211, 211, 0.6)), url('./images/circular-pattern.png');
 }
 
@@ -109,13 +147,12 @@
 /* Courses Section */
 
 .main_courses {
-  width: 100vw;
   height: 100%;
   background-color: #272a31;
   font-family: 'Lato', sans-serif;
   background-image: url('./images/bricks.png');
   background-blend-mode: multiply;
-  background-size: 1%;
+  background-size: 3%;
 }
 
 .section_headline {
@@ -368,7 +405,7 @@ footer {
     margin: auto 70px auto 70px;
   }
 
-  .mobile_ver {
+  .navbar_mobile_ver {
     display: none;
   }
 
@@ -380,7 +417,7 @@ footer {
 
   .headlines {
     margin-left: 10vw;
-    width: 100vw;
+    width: auto;
     padding: 90px 10px 35px 10px;
   }
 
@@ -421,6 +458,7 @@ footer {
 
   .main_courses {
     height: 60vh;
+    background-size: 1%;
   }
 
   .card {

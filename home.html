@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
         rel="stylesheet" />
     <link rel="stylesheet" href="home_style.css">
-    <title>Home</title>
+    <title>Web Dev Course</title>
 </head>
 
 <body>
@@ -48,11 +48,21 @@
                 <a href="#" class="join_btn">Join Now</a>
             </div>
         </div>
-        <div class="mobile_ver d_flex_column">
-            <div class="humgurger_menu"></div>
-            <div class="humgurger_menu"></div>
-            <div class="humgurger_menu"></div>
-        </div>
+        <nav class="navbar_mobile_ver">
+            <div onclick="openMenu()" class="mobile_ver d_flex_column">
+                <div class="humgurger_menu"></div>
+                <div class="humgurger_menu"></div>
+                <div class="humgurger_menu"></div>
+            </div>
+            <ul class="navbar_mobile d_flex_column">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><img onclick="closeMenu()" src="./images/cancel.png" alt="close button"></li>
+            </ul>
+        </nav>
     </header>
     <section class="headline">
         <div class="headlines">
@@ -111,71 +121,7 @@
             <hr>
         </div>
         <div class="the_team">
-            <div class="teacher_info d_flex_row">
-                <div class="img_container">
-                    <img class="teacher_photo" src="./images/Norman_green1.jpg" alt="Norman green">
-                </div>
-                <div class="info d_flex_column">
-                    <h3 class="name">Norman Green</h3>
-                    <p class="job">Co-founder & CEO</p>
-                    <p class="quotes">"The only way to learn a new programming language is by writing programs in it."
-                    </p>
-                </div>
-            </div>
-            <div class="teacher_info d_flex_row">
-                <div class="img_container">
-                    <img class="teacher_photo" src="./images/Maria_williams1.jpg" alt="Maria williams">
-                </div>
-                <div class="info d_flex_column">
-                    <h3 class="name">Maria williams</h3>
-                    <p class="job">Software Engineer</p>
-                    <p class="quotes">"Code is like humor. When you have to explain it, it’s bad."
-                    </p>
-                </div>
-            </div>
-            <div class="teacher_info d_flex_row">
-                <div class="img_container">
-                    <img class="teacher_photo" src="./images/Mike_wang1.jpg" alt="Mike wang">
-                </div>
-                <div class="info d_flex_column">
-                    <h3 class="name">Mike wang</h3>
-                    <p class="job">Ex-Google Software Engineer</p>
-                    <p class="quotes">"Don't write better error messages, write code that doesn't need them."
-                    </p>
-                </div>
-            </div>
-            <div class="teacher_info d_flex_row">
-                <div class="img_container">
-                    <img class="teacher_photo" src="./images/Annia_miller1.jpg" alt="Annia Miller">
-                </div>
-                <div class="info d_flex_column">
-                    <h3 class="name">Annia Miller</h3>
-                    <p class="job">Co-founder & COO</p>
-                    <p class="quotes">"The best error message is the one that never shows up."
-                    </p>
-                </div>
-            </div>
-            <div class="teacher_info d_flex_row">
-                <div class="img_container">
-                    <img class="teacher_photo" src="./images/Alexander_davis.jpg" alt="Alexander Davis">
-                </div>
-                <div class="info d_flex_column">
-                    <h3 class="name">Alexander Davis</h3>
-                    <p class="job">Ex MIT Professor</p>
-                    <p class="quotes">"Experience is the name everyone gives to their mistakes."</p>
-                </div>
-            </div>
-            <div class="teacher_info d_flex_row">
-                <div class="img_container">
-                    <img class="teacher_photo" src="./images/emma_Smith1.jpg" alt="Emma Smith">
-                </div>
-                <div class="info d_flex_column">
-                    <h3 class="name">Emma Smith</h3>
-                    <p class="job">Data Analyst</p>
-                    <p class="quotes">"Programming isn't about what you know; it's about what you can figure out."
-                    </p>
-                </div>
-            </div>
+            
         </div>
     </section>
     <Footer>
@@ -208,6 +154,9 @@
             </div>
         </div>
     </Footer>
+
+    <script src="mobileMenu.js"></script>
+    <script src="home.js"></script>
 </body>
 
 </html>

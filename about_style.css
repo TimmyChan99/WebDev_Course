@@ -51,6 +51,44 @@
   height: 5px;
   width: 30px;
 }
+/* menu mobile version */
+
+.navbar_mobile_ver {
+  position: relative;
+}
+
+.navbar_mobile {
+  position: fixed;
+  background-color: #fff;
+  z-index: 3;
+  list-style: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  display: none;
+}
+
+.navbar_mobile li {
+  margin-top: 60px;
+}
+
+.navbar_mobile li a {
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: 800;
+  color: #272a31;
+}
+
+.navbar_mobile img {
+  width: 46px;
+  margin-top: 60px;
+}
+
+.navbar_mobile li a:hover {
+  color: #ec5242;
+}
 
 /*  Headline Section  */
 
@@ -397,7 +435,7 @@ hr {
     margin: auto 70px auto 70px;
   }
 
-  .mobile_ver {
+  .navbar_mobile_ver {
     display: none;
   }
 

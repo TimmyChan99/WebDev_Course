@@ -48,10 +48,20 @@
                 <a href="#" class="join_btn">Join Now</a>
             </div>
         </div>
-        <nav class="mobile_ver d_flex_column">
-            <div class="humgurger_menu"></div>
-            <div class="humgurger_menu"></div>
-            <div class="humgurger_menu"></div>
+        <nav class="navbar_mobile_ver">
+            <div onclick="openMenu()" class="mobile_ver d_flex_column">
+                <div class="humgurger_menu"></div>
+                <div class="humgurger_menu"></div>
+                <div class="humgurger_menu"></div>
+            </div>
+            <ul class="navbar_mobile d_flex_column">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="home.html">Courses</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><img onclick="closeMenu()" src="./images/cancel.png" alt="close button"></li>
+            </ul>
         </nav>
     </header>
     <section class="headline_section">
@@ -138,6 +148,8 @@
             </div>
         </div>
     </Footer>
+
+    <script src="mobileMenu.js"></script>
 </body>
 
 </html>
