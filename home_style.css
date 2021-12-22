@@ -29,10 +29,12 @@
 
 .header {
   position: relative;
+  background-color: gray;
 }
 
 .desktop_ver {
   display: none;
+  box-shadow: 0 5px 5px #d3d3d3;
 }
 
 .mobile_ver {
@@ -42,6 +44,7 @@
   position: absolute;
   top: 15px;
   left: 15px;
+  z-index: 1;
 }
 
 .humgurger_menu {
@@ -54,19 +57,22 @@
 
 .headline {
   width: 100vw;
-  height: 45vh;
-
-  /* background-image: linear-gradient(to bottom, rgba(211, 211, 211, 0.9), rgba(211, 211, 211, 0.7)), url('./images/bg_1.jpg'); */
+  height: 65vh;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(211, 211, 211, 0.6)), url('./images/circular-pattern.png');
 }
 
 .headlines {
-  margin: 90px 10px 0 10px;
+  padding: 90px 10px 35px 10px;
 }
 
 .moto {
   font-family: 'Lato', sans-serif;
   color: #ec5242;
   font-weight: 390;
+}
+
+.title_hero_section {
+  text-transform: uppercase;
 }
 
 .title span {
@@ -83,6 +89,7 @@
   padding: 11px;
   color: rgb(73, 73, 77);
   margin: 10px;
+  width: 90vw;
 }
 
 .moto2 {
@@ -104,6 +111,9 @@
   height: 100%;
   background-color: #272a31;
   font-family: 'Lato', sans-serif;
+  background-image: url('./images/bricks.png');
+  background-blend-mode: multiply;
+  background-size: 1%;
 }
 
 .section_headline {
@@ -137,7 +147,8 @@ hr {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(211, 211, 211, 0.2);
+  backdrop-filter: blur(2px);
   width: 95%;
   height: 85px;
   justify-content: space-evenly;
@@ -250,7 +261,7 @@ hr {
 /* Footer Section */
 
 footer {
- display: none;
+  display: none;
 }
 
 /* Desktop Version */
@@ -358,6 +369,46 @@ footer {
     display: none;
   }
 
+  /*  Headline Section  */
+  .headlines {
+    margin-left: 10vw;
+    width: 100vw;
+    height: 75vh;
+  }
+
+  .moto {
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .title_hero_section {
+    margin-top: 10px;
+  }
+
+  .title_hero_section span {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  .informtion {
+    width: 40vw;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+
+  .moto2 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .credit {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
   /* Courses Section */
 
   .main_courses {
@@ -436,6 +487,7 @@ footer {
   .section_title {
     font-weight: 600;
     font-size: 25px;
+    align-items: center;
   }
 
   .the_team {
@@ -471,17 +523,13 @@ footer {
   footer {
     display: block;
     background-color: rgb(48, 48, 51);
-  margin-top: 30px;
+    margin-top: 30px;
     height: 25vh;
-  }
-
-  .section_title {
-    align-items: center;
   }
 
   .footer_title {
     font-weight: 500;
-    font-size: 30px; 
+    font-size: 30px;
     margin-top: 10px;
   }
 
@@ -496,7 +544,6 @@ footer {
     margin-left: 70px;
   }
 
-
   .copyright_footer {
     background-color: #fff;
     height: 20vh;
@@ -509,9 +556,11 @@ footer {
     align-items: center;
     justify-content: space-around;
   }
-  .copyright_info{
+
+  .copyright_info {
     align-items: center;
   }
+
   .copyright_img {
     width: 50px;
     height: 50px;
