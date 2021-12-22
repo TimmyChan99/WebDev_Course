@@ -477,8 +477,9 @@ hr {
 
   /* Future Classes Section */
   .future_classes {
-      padding: 4% 0;
+    padding: 4% 0;
   }
+
   .schedules {
     font-size: 17px;
   }
@@ -503,10 +504,11 @@ hr {
   .start_now {
     font-size: 17px;
   }
+
   /* Footer Section */
 
   .partners_section {
-      display: none;
+    display: none;
   }
 
   .copyright_footer {
@@ -515,12 +517,12 @@ hr {
   }
 
   .copyright_img {
-      width: 10%;
+    width: 10%;
   }
 
   .cr_info {
-      color: black;
-      font-size: 17px;
-      padding: 20px 0;
+    color: black;
+    font-size: 17px;
+    padding: 20px 0;
   }
 }

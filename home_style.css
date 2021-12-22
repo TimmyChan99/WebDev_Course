@@ -137,7 +137,7 @@ hr {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
   width: 95%;
   height: 85px;
   justify-content: space-evenly;
@@ -145,21 +145,25 @@ hr {
 }
 
 .course_icon {
-  width: 10vw;
-  height: 5vh;
+  width: 45px;
+  height: 46px;
 }
 
 .course_name {
   color: #ec5242;
   font-size: 15px;
-  width: 10%;
+  width: 20%;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
 .course_info {
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   width: 50%;
+  line-height: 15px;
+  font-family: 'Lato', sans-serif;
 }
 
 .course_link {
@@ -170,6 +174,7 @@ hr {
   padding: 17px 40px;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Teaching Team Section */
@@ -327,6 +332,10 @@ footer {
     color: #272a31;
   }
 
+  .logo span {
+    color: #ec5242;
+  }
+
   .navbar {
     list-style: none;
     width: 40vw;
@@ -364,24 +373,123 @@ footer {
   /* Courses Section */
 
   .main_courses {
-    height: 50vh;
+    height: 60vh;
   }
-.card {
-  height: 100%;
-}
+
+  .card {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .cards_container {
-    grid-template-columns: repeat(5, 15%);
-    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: repeat(5, 16%);
+    grid-template-rows: 20% 95% 20%;
+    justify-content: center;
+    place-items: center;
+    gap: 0;
+    padding-top: 1%;
   }
+
   .section_headline {
     grid-column: 3/4;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    width: 25px;
+    margin-top: 6px;
+    height: 2px;
   }
 
   .card1 {
     grid-column: 1/2;
   }
+
+  .course_icon {
+    width: 55px;
+    height: 56px;
+  }
+
+  .course_name {
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+  }
+
+  .course_info {
+    text-align: center;
+    width: 85%;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+  }
+
   .course_link {
-    grid-area: 3/3/4/4;
+    grid-area: 3/2/4/5;
+    justify-self: center;
+    align-self: start;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0;
+    text-underline-offset: 2px;
+  }
+
+  /* Teaching Team Section */
+
+  .teaching_team {
+    height: 70vh;
+    padding-top: 20px;
+  }
+
+  .section_title {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .the_team {
+    grid-template-columns: repeat(2, 35vw);
+    grid-template-rows: repeat(3, 130px);
+    align-content: center;
+    justify-content: center;
+    row-gap: 25px;
+    margin-top: 50px;
+  }
+
+  .teacher_info {
+    height: 100%;
+    width: 100%;
+  }
+
+  .name {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .job {
+    font-size: 14px;
+  }
+
+  .quotes {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* Footer Section */
+
+  footer {
+    height: 20vh;
+  }
+
+  .partners {
+    justify-content: center;
+  }
+
+  .partner_img {
+    width: 5vw;
+    margin-left: 70px;
   }
 }
