@@ -370,10 +370,13 @@ footer {
   }
 
   /*  Headline Section  */
+  .headline {
+    height: 75vh;
+  }
+
   .headlines {
     margin-left: 10vw;
     width: 100vw;
-    height: 75vh;
   }
 
   .moto {

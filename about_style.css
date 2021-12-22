@@ -285,10 +285,13 @@ hr {
 
 .copyright_info {
   padding: 15px 10px;
+  align-items: center;
 }
 
 .copyright_img {
-  width: 25%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 .cr_info {
@@ -516,8 +519,15 @@ hr {
     height: 20vh;
   }
 
+  .copyright_info {
+    width: 40vw;
+    align-items: center;
+  }
+
   .copyright_img {
-    width: 10%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
   }
 
   .cr_info {
