@@ -420,7 +420,7 @@ hr {
     color: #272a31;
   }
 
-  .nav_about {
+  .nav_li:hover {
     color: #ec5242;
   }
 
