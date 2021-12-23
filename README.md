@@ -9,20 +9,24 @@
 This website has two pages.
 
 The Home page:
+
 - Desktop Version 
+
 ![Screenshot 2021-12-23 140814](https://user-images.githubusercontent.com/92228303/147248775-cc3a749a-1b1b-47f2-9d11-c7c2d5ca3c74.png)
 
 - Mobile version
-- 
+
 ![Screenshot 2021-12-23 140904](https://user-images.githubusercontent.com/92228303/147249171-789fd99e-1bd2-495f-a843-03bfd1d64c54.png)
 
 
 The About page: 
+
 - Desktop Version
+
 ![Screenshot 2021-12-23 140954](https://user-images.githubusercontent.com/92228303/147248998-7ed7c838-9cc4-4f0e-8282-c772ac8483bd.png)
 
 - Mobile version
-- 
+
 ![Screenshot 2021-12-23 140935](https://user-images.githubusercontent.com/92228303/147249243-47b042fe-b138-4ff0-97e0-145e34851035.png)
 
 Additional features:
