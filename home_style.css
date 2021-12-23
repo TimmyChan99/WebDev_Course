@@ -247,13 +247,13 @@ hr {
   justify-items: center;
   align-items: center;
   margin: 5% 4%;
-  row-gap: 30px;
 }
 
 .teacher_info {
   justify-content: space-around;
   height: 100%;
   width: 100%;
+  margin-top: 30px;
 }
 
 .img_container {
@@ -296,6 +296,29 @@ hr {
   font-size: 11px;
   color: #272a31;
   font-family: 'Lato', sans-serif;
+}
+
+.more_btn {
+  width: 93%;
+  height: 40px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px #d3d3d3 solid;
+}
+
+.btn_text {
+  font-weight: 500;
+}
+
+.arrow {
+  width: 16px;
+  margin-left: 10px;
+}
+
+.hidden_card {
+  display: none;
 }
 
 /* Footer Section */
@@ -548,6 +571,7 @@ footer {
   .teacher_info {
     height: 100%;
     width: 100%;
+    display: flex;
   }
 
   .name {
@@ -562,6 +586,14 @@ footer {
   .quotes {
     font-size: 14px;
     font-weight: 600;
+  }
+
+  .more_btn {
+    display: none;
+  }
+
+  .hidden_card {
+    display: flex;
   }
 
   /* Footer Section */

@@ -45,8 +45,37 @@ const teamContainer = document.querySelector('.the_team');
 
 
 
+    // for (let i=0; i < teachers.length; i += 1) {
+    //     teamContainer.innerHTML += `<div class="teacher_info d_flex_row">
+    //     <div class="img_container">
+    //         <img class="teacher_photo" src=${teachers[i].image} alt="Norman green">
+    //     </div>
+    //     <div class="info d_flex_column">
+    //         <h3 class="name">${teachers[i].name}</h3>
+    //         <p class="job">${teachers[i].job}</p>
+    //         <p class="quotes">"${teachers[i].quote}"
+    //         </p>
+    //     </div>
+    //  </div>`
+    // };
+
+
     for (let i=0; i < teachers.length; i += 1) {
-        teamContainer.innerHTML += `<div class="teacher_info d_flex_row">
+
+        if (i > 1) {
+            teamContainer.innerHTML += `<div class="teacher_info d_flex_row hidden_card">
+            <div class="img_container">
+                <img class="teacher_photo" src=${teachers[i].image} alt="Norman green">
+            </div>
+            <div class="info d_flex_column">
+                <h3 class="name">${teachers[i].name}</h3>
+                <p class="job">${teachers[i].job}</p>
+                <p class="quotes">"${teachers[i].quote}"
+                </p>
+            </div>
+         </div>`
+        } else {
+            teamContainer.innerHTML += `<div class="teacher_info d_flex_row">
         <div class="img_container">
             <img class="teacher_photo" src=${teachers[i].image} alt="Norman green">
         </div>
@@ -57,4 +86,48 @@ const teamContainer = document.querySelector('.the_team');
             </p>
         </div>
      </div>`
-    };
+        }
+    }
+
+    /* Toggle Teaching team */
+
+    // const hiddenCard = document.querySelector('.hidden_card');
+    // const moreBtn = document.querySelector('."more_btn');
+
+    // function toggle() {
+    //     if(hiddenCard.style.display === 'none'){
+    //         hiddenCard.style.display = 'flex';
+    //     } else {hiddenCard.style.display = 'none'}
+    // }
+
+
+    // let cards = document.querySelectorAll('.hidden_card'), i;
+    // for (i=0; i<cards.length; i+=1){
+    //     cards[i].style.display = 'none';
+    // }
+    
+    //    let array = [];
+    
+
+    //     let cards = document.querySelectorAll('.hidden_card'), i;
+    //     for (i=0; i<cards.length; i+=1){
+    //             array.push(cards[i]);
+    //     }
+        
+    //     for(let i=0; i< array.length; i+=1){
+    //         if(array[i].style.display ='none')
+    //         array[i].style.display = 'flex';
+    //     }
+
+        
+    const cards = document.querySelectorAll('.hidden_card');
+
+
+    function toggle() {
+    cards.forEach((card) => {
+        if(card.style.display ==='none'){
+             card.style.display = 'flex';
+        } else {card.style.display = 'none'}
+    })
+};
+
