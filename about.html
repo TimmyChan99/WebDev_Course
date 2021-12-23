@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="about_style.css">
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <div class="desktop_ver d_flex_column">
+            <div class="menu_tools d_flex_row">
+                <div class="social_media">
+                    <img src="./images/facebook-logo.png" alt="facebook">
+                    <img src="./images/twitter.png" alt="twitter">
+                </div>
+                <ul class="tools_list d_flex_row">
+                    <li><a href="#">Logout</a></li>
+                    <li><a href="index.html">MyPage</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="menu d_flex_row">
+                <a href="index.html" class="logo">
+                    <div class="logo_container d_flex_row logo_header">
+                        <img src="./images/graduation-cap2.png" alt="graduation cap">
+                        <div class="logo_name d_flex_column">
+                            <h2>Web <span> Dev</span></h2>
+                            <h3>Course</h3>
+                        </div>
+                    </div>
+                </a>
+                <nav>
+                    <ul class="navbar d_flex_row">
+                        <li><a class="nav_about nav_li" href="about.html">About</a></li>
+                        <li><a class="nav_li" href="#">Program</a></li>
+                        <li><a class="nav_li" href="index.html">Courses</a></li>
+                        <li><a class="nav_li" href="index.html">Team</a></li>
+                        <li><a class="nav_li" href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="join_btn">Join Now</a>
+            </div>
+        </div>
+        <nav class="navbar_mobile_ver">
+            <div onclick="openMenu()" class="mobile_ver d_flex_column">
+                <div class="humgurger_menu"></div>
+                <div class="humgurger_menu"></div>
+                <div class="humgurger_menu"></div>
+            </div>
+            <ul class="navbar_mobile d_flex_column">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="home.html">Courses</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><img onclick="closeMenu()" src="./images/cancel.png" alt="close button"></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="headline_section">
+        <div class="headlines d_flex_column">
+            <h3 class="moto">"From Zero to Hero"</h3>
+            <h1 class="title1">Web Development </h1>
+            <h1 class="title1">free course</h1>
+            <hr class="break_line">
+            <p class="informtion">Our mission: to help people learn to code for free regardless of where they live and
+                the size of their wallets. We accomplish this by creating thousands of videos, articles, and interactive
+                coding lessons - all freely available to the public. We also have thousands of study groups around the
+                world.</p>
+             <p class="information_desktop">Our mission: to help people learn to code for free regardless of where they live and
+                the size of their wallets. We accomplish this by creating thousands of videos, articles, and interactive
+                coding lessons - all freely available to the public. We also have thousands of study groups around the
+                world. <br> Our team has come together t make it possible for everyone to become a software developer with a curriculum containing all essential and important courses to succeed in your career.
+                We create simplified and interactive learning experiences. <br>
+                Learning web development should be easy to understand and available for everyone, everywhere!
+                We believe, learning is the source of human progress.It has the power to transform our lives, for ourselves, for our families, for our communities.</p>
+            <p class="contact_us">Please contact us per Email for any further questions</p>
+            <p class="credit">@ Web Course</p>
+            <p class="email">webcourse@dev.com</p>
+        </div>
+    </section>
+    <section class="logo_design d_flex_column">
+        <div class="section_title d_flex_column">
+            <h2 class="title title2lines">Web Development Course</h2>
+            <hr>
+        </div>
+        <p class="logo_story">The logo of Web Development Course was created James Smith who is a student who join this
+            courses to become a software developer.</p>
+        <div class="logo_container logo_section2 d_flex_row">
+            <img src="./images/graduation-cap2.png" alt="graduation cap">
+            <div class="logo_name d_flex_column">
+                <h2>Web <span> Dev</span></h2>
+                <h3>Course</h3>
+            </div>
+        </div>
+    </section>
+    <section class="future_classes d_flex_column">
+        <div class="section_title d_flex_column">
+            <h2 class="title">Next Future Classes</h2>
+            <hr>
+        </div>
+        <p class="schedules">Here is the program and the start date for the next classes.</p>
+        <div class="cards_date">
+            <div class="class_date class1">
+                <h3 class="date">January 13th 2022</h3>
+                <a class="start_now" href="#">Start Now</a>
+            </div>
+            <div class="class_date class2">
+                <h3 class="date"> March 4th 2022</h3>
+                <a class="start_now" href="#">Start Now</a>
+            </div>
+        </div>
+    </section>
+    <Footer>
+        <div class="partners_section">
+            <div class="section_title d_flex_column">
+                <h2 class="title footer_title">Partner</h2>
+                <hr>
+            </div>
+            <ul class="partners d_flex_row">
+                <li><img class="partner_img" src="./images/google.png" alt="google"></li>
+                <li><img class="partner_img" src="./images/ted.png" alt="ted"></li>
+                <li><img class="partner_img" src="./images/blogger.png" alt="blogger"></li>
+                <li><img class="partner_img" src="./images/windows-logo.png" alt="windows-logo"></li>
+                <li><img class="partner_img" src="./images/github.png" alt="github"></li>
+            </ul>
+        </div>
+        <div class="copyright_footer d_flex_row">
+            <div class="logo_container d_flex_row footer_logo">
+                <img src="./images/graduation-cap2.png" alt="graduation cap">
+                <div class="logo_name d_flex_column">
+                    <h2>Web <span> Dev</span></h2>
+                    <h3>Course</h3>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright_info d_flex_row">
+                    <img class="copyright_img" src="./images/copyright.png" alt="copyright">
+                    <h4 class="cr_info">copyright all rights reserved to Web Dev Course</h4>
+                </div>
+            </div>
+        </div>
+    </Footer>
+
+    <script src="mobileMenu.js"></script>
+</body>
+
+</html>
