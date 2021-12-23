@@ -9,3 +9,6 @@ function openMenu() {
 function closeMenu() {
   navBar.style.display = 'none';
 }
+
+openMenu();
+closeMenu();

@@ -74,21 +74,20 @@ for (let i = 0; i < teachers.length; i += 1) {
 /* Toggle Teaching team */
 
 const cards = document.querySelectorAll('.hidden_card');
-const x = window.matchMedia('(min-width: 768px)');
+const moreBtn = document.querySelector('.more_btn');
 
-function toggle() {
+moreBtn.addEventListener('click', () => {
   cards.forEach((card) => {
     if (card.style.display === 'none') {
       card.style.display = 'flex';
     } else { card.style.display = 'none'; }
   });
+});
+
+function reload() {
+  window.addEventListener('resize', () => {
+    window.location.reload();
+  });
 }
 
-function show(x) {
-  if (x.matches) {
-    cards.forEach((card) => { card.style.display = 'flex'; });
-  }
-}
-
-x.addListener(show);
-toggle();
+reload();
