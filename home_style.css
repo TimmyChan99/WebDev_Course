@@ -412,7 +412,7 @@ footer {
     color: #272a31;
   }
 
-  .nav_about {
+  .nav_li:hover {
     color: #ec5242;
   }
 
@@ -451,6 +451,20 @@ footer {
 
   .title_hero_section {
     margin-top: 10px;
+    animation-name: title;
+    animation-duration: 2s;
+  }
+
+  @keyframes title {
+    0% {
+      transform: translate(-150px, 0);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
   }
 
   .title_hero_section span {
@@ -488,11 +502,18 @@ footer {
     height: 100%;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.8s ease-out;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    border: 3px #fff solid;
+    z-index: 5;
   }
 
   .cards_container {
     grid-template-columns: repeat(5, 16%);
-    grid-template-rows: 20% 95% 20%;
+    grid-template-rows: 20% 90% 20%;
     justify-content: center;
     place-items: center;
     gap: 0;
@@ -500,7 +521,7 @@ footer {
   }
 
   .section_headline {
-    grid-column: 3/4;
+    grid-column: 2/5;
     margin-bottom: 20px;
   }
 
