@@ -84,10 +84,3 @@ moreBtn.addEventListener('click', () => {
   });
 });
 
-function reload() {
-  window.addEventListener('resize', () => {
-    window.location.reload();
-  });
-}
-
-reload();
